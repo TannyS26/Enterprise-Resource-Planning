@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container">
+
+    <h5>Logged Out</h6>
+    <hr>
+    <p>You have been successfully logged out.</p>
+    <p>Thanks for spending some quality time with the Web site today.</p>
+    <p><a class="btn btn-primary" href="{% url 'login' %}">Login Again</a>
+    <a class="btn btn-success" href="{% url 'home' %}">Home</a></p>
+    
+    </div>
+{% endblock %}

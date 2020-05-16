@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+   <title>ERP Solutions</title>
+{% endblock%}
+
+{% block style %}
+    
+    <style>
+    body {
+        background: #17242D;
+    }
+    .card {
+        background: #4f5e65;
+        color: white;
+    }
+
+    hr {
+        background:white;
+    }
+
+    p {
+        color:white;
+        margin:10px;
+    }
+
+    .list-group-item {
+        background:none;
+        color:white;
+    }
+
+    .btn-primary {
+        background: #31C3A2;
+        border-color: #31C3A2;
+    }
+
+    h4,h6 {
+        margin-top:20px;
+        color:white;
+    }
+
+    a {
+        text-decoration:none;
+        color:white;
+    }
+    a:hover
+    {
+        color:#31C3A2;
+        text-decoration:none;
+        cursor:pointer;
+    }
+    </style>
+
+{% endblock %}
+
+{% block body %}
+
+<div class="container">
+
+<h4>Users &amp; Permissions</h4>
+
+<hr>
+
+<div class="row row-cols-1 row-cols-md-3" style="margin-top:10px;">
+  <div class="col mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">Users</h5>
+        <hr>
+        <p class="card-text"></p>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="userspermissions/user">User</a></li>
+            <li class="list-group-item"><a href="userspermissions/role">Role</a></li>
+            <li class="list-group-item"><a href="userspermissions/roleprofile">Role Profile</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">Permissions</h5>
+        <hr>
+        <p class="card-text"></p>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="./">Role Permissions Manager</a></li>
+            <li class="list-group-item"><a href="./">User Permissions</a></li>
+            <li class="list-group-item"><a href="./">Role Permission for Page and Report</a></li>
+            <li class="list-group-item"><a href="./">Permitted Documents For User</a></li>
+            <li class="list-group-item"><a href="./">Document Share Report</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">Logs</h5>
+        <hr>
+        <p class="card-text"></p>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="userspermissions/activitylogs">Activity Log</a></li>
+            <li class="list-group-item"><a href="userspermissions/accesslogs">Access Log</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+{% endblock %}
+
+{% block script %}
+
+{% endblock %}

@@ -1,0 +1,142 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+   <title>ERP Solutions</title>
+{% endblock%}
+
+{% block style %}
+    
+    <style>
+    body {
+        background: #17242D;
+    }
+    .card {
+        background: #4f5e65;
+        color: white;
+    }
+    hr {
+        background:white;
+    }
+
+    p {
+      color:white;
+      margin:10px;
+    }
+
+    .btn-primary {
+        background: #31C3A2;
+        border-color: #31C3A2;
+    }
+
+    h6 {
+      margin-top:20px;
+      color:white;
+    }
+
+    .alert {
+    }
+    </style>
+
+{% endblock %}
+
+{% block body %}
+
+<div class="container">
+
+<h6>Modules</h6>
+<div class="row row-cols-1 row-cols-md-3" style="margin-top:10px;">
+  <div class="col mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">Accounts</h5>
+        <hr>
+        <p class="card-text"></p>
+        <a href = "./" class="btn btn-primary">Open</a>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">Purchase</h5>
+        <hr>
+        <p class="card-text"></p>
+        <a href = "purchase/" class="btn btn-primary">Open</a>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">Inventory</h5>
+        <hr>
+        <p class="card-text"></p>
+        <a href = "inventory/" class="btn btn-primary">Open</a>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">Reports</h5>
+        <hr>
+        <p class="card-text"></p>
+        <a href = "./" class="btn btn-primary">Open</a>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <i class="fas fa-file-invoice-dollar"></i>
+        <h5 class="card-title">Billing</h5>
+        <hr>
+        <p class="card-text"></p>
+        <a href = "./" class="btn btn-primary">Open</a>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">Projects</h5>
+        <hr>
+        <p class="card-text"></p>
+        <a href = "./" class="btn btn-primary">Open</a>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">Contracts</h5>
+        <hr>
+        <p class="card-text"></p>
+        <a href = "./" class="btn btn-primary">Open</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h6>Administration</h6>
+<div class="row row-cols-1 row-cols-md-3" style="margin-top:10px;">  
+  <div class="col mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">Users &amp; Permissions</h5>
+        <hr>
+        <p class="card-text"></p>
+        <a href = "userspermissions/" class="btn btn-primary">Open</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+{% endblock %}
+
+{% block script %}
+
+{% endblock %}

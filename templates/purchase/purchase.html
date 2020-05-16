@@ -1,0 +1,183 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+   <title>ERP Solutions</title>
+{% endblock%}
+
+{% block style %}
+    
+    <style>
+    body {
+        background: #17242D;
+    }
+    .card {
+        background: #4f5e65;
+        color: white;
+    }
+
+    hr {
+        background:white;
+    }
+
+    p {
+        color:white;
+        margin:10px;
+    }
+
+    .list-group-item {
+        background:none;
+        color:white;
+    }
+
+    .btn-primary {
+        background: #31C3A2;
+        border-color: #31C3A2;
+    }
+
+    h4,h6 {
+        margin-top:20px;
+        color:white;
+    }
+
+    a {
+        text-decoration:none;
+        color:white;
+    }
+    a:hover
+    {
+        color:#31C3A2;
+        text-decoration:none;
+        cursor:pointer;
+    }
+    </style>
+
+{% endblock %}
+
+{% block body %}
+
+<div class="container">
+
+<h4>Purchase</h4>
+
+<hr>
+
+<div class="row row-cols-1 row-cols-md-3" style="margin-top:10px;">
+  <div class="col mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">Purchasing</h5>
+        <hr>
+        <p class="card-text"></p>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="#">Material Request</a></li>
+            <li class="list-group-item"><a href="#">Purchase Order</a></li>
+            <li class="list-group-item"><a href="#">Purchase Invoice</a></li>
+            <li class="list-group-item"><a href="#">Request for Quotation</a></li>
+            <li class="list-group-item"><a href="#">Supplier Quotation</a></li>
+            <!--<li class="list-group-item"><a href="#">Delivery Trip</a></li>-->
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">Items and Pricing</h5>
+        <hr>
+        <p class="card-text"></p>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="#">Item</a></li>
+            <li class="list-group-item"><a href="#">Item Price</a></li>
+            <li class="list-group-item"><a href="#">Price List</a></li>
+            <!--<li class="list-group-item"><a href="#">Pricing Rule</a></li>
+            <li class="list-group-item"><a href="#">Product Bundle</a></li>
+            <li class="list-group-item"><a href="#">Item Group</a></li>
+            <li class="list-group-item"><a href="#">Promotional Scheme</a></li>-->
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">Settings</h5>
+        <hr>
+        <p class="card-text"></p>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="#">Buying Settings</a></li>
+            <li class="list-group-item"><a href="#">Purchase Taxes and Charges Template</a></li>
+            <li class="list-group-item"><a href="#">Terms and Conditions Template</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">Supplier</h5>
+        <hr>
+        <p class="card-text"></p>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="#">Supplier</a></li>
+            <li class="list-group-item"><a href="#">Supplier Group</a></li>
+            <li class="list-group-item"><a href="#">Contact</a></li>
+            <li class="list-group-item"><a href="#">Address</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">Key Reports</h5>
+        <hr>
+        <p class="card-text"></p>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="#">Purchase Analytics</a></li>
+            <li class="list-group-item"><a href="#">Purchase Order Trends</a></li>
+            <li class="list-group-item"><a href="#">Procurement Tracker</a></li>
+            <li class="list-group-item"><a href="#">Requested Items To Be Ordered</a></li>
+            <li class="list-group-item"><a href="#">Supplier Addresses And Contacts</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">Supplier Scorecard</h5>
+        <hr>
+        <p class="card-text"></p>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="#">Supplier Scorecard</a></li>
+            <li class="list-group-item"><a href="#">Supplier Scorecard Variable</a></li>
+            <li class="list-group-item"><a href="#">Supplier Scorecard Criteria</a></li>
+            <li class="list-group-item"><a href="#">Supplier Scorecard Standing</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">Other Reports</h5>
+        <hr>
+        <p class="card-text"></p>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="#">Items To Be Requested</a></li>
+            <li class="list-group-item"><a href="#">Item-Wise Purchase History</a></li>
+            <li class="list-group-item"><a href="#">Supplier-Wise Sales Analytics</a></li>
+            <li class="list-group-item"><a href="#">Material Requests for which Supplier Quotations are not created</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+{% endblock %}
+
+{% block script %}
+
+{% endblock %}

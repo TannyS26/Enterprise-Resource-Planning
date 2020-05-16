@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+   <title>ERP Solutions</title>
+{% endblock%}
+
+{% block style %}
+    
+    <style>
+    body {
+        background: #17242D;
+    }
+    .card {
+        background: #4f5e65;
+        color: white;
+        max-width: 50%;
+        max-height: 50%;
+        left:25%;
+        top:50px;
+        margin-top:10px;
+    }
+    hr {
+        background:white;
+    }
+
+    .btn-primary {
+        background: #31C3A2;
+        border-color: #31C3A2;
+    }
+
+    h6 {
+      margin-top:20px;
+      color:white;
+    }
+
+    </style>
+
+{% endblock %}
+
+{% block body %}
+
+<div class="container">
+<div class="card text-center"  style="max-width: 50%;">
+  <div class="card-header">
+    LOGIN
+  </div>
+
+  <form method="post">
+  <div class="card-body"> 
+    {% csrf_token %}
+    {% if error %}
+    {{ error }}
+    {% endif %}
+    {{ form.as_p }}
+  </div>
+
+  <div class="card-footer text-muted">
+    <button class="btn btn-primary" type="submit">Login</button>
+    <button class="btn btn-danger" type="reset">Clear</button>
+  </div>
+  </form>
+</div>
+</div>
+
+{% endblock%}

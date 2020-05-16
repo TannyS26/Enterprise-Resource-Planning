@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+   <title>ERP Solutions</title>
+{% endblock%}
+
+{% block style %}
+    
+    <style>
+    body {
+        background: #17242D;
+    }
+    .card {
+        background: #4f5e65;
+        color: white;
+        max-width: 50%;
+        max-height: 50%;
+        left:25%;
+        top:50px;
+        margin-top:10px;
+    }
+    hr {
+        background:white;
+    }
+
+    .btn-primary {
+        background: #31C3A2;
+        border-color: #31C3A2;
+    }
+
+    h6 {
+      margin-top:20px;
+      color:white;
+    }
+
+    .helptext {
+        color:grey;
+    }
+
+    .errorlist {
+        color: red;
+        padding:5px;
+        list-style: none;
+        border: 1px red solid;
+    }
+
+     ul {
+        color: grey;
+        margin-left:50px;
+        padding:5px;
+     }
+
+    </style>
+
+{% endblock %}
+
+{% block body %}
+
+<div class="container">
+
+<h6>Register New User</h6>
+
+<hr>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <p><button class="btn btn-primary" type="submit">Register User</button>
+    <button class="btn btn-danger" type="reset">Clear</button></p>
+  </form>
+</div>
+</div>
+
+{% endblock%}

@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+   <title>ERP Solutions</title>
+{% endblock%}
+
+{% block style %}
+    
+    <style>
+    body {
+        background: #17242D;
+    }
+    .card {
+        background: #4f5e65;
+        color: white;
+        max-width: 50%;
+        max-height: 50%;
+        left:25%;
+        top:50px;
+        margin-top:10px;
+    }
+    hr {
+        background:white;
+    }
+
+    .btn-primary {
+        background: #31C3A2;
+        border-color: #31C3A2;
+    }
+
+    h6 {
+      margin-top:20px;
+      color:white;
+    }
+
+    .helptext {
+        color:grey;
+    }
+
+    .errorlist {
+        color: red;
+        padding:5px;
+        list-style: none;
+        border: 1px red solid;
+    }
+
+     ul {
+        color: grey;
+        margin-left:50px;
+        padding:5px;
+     }
+
+     li {
+         list-style:None;
+     }
+
+    </style>
+
+{% endblock %}
+
+{% block body %}
+
+<div class="container">
+
+<div class="row">
+    <div class="col">
+        <h6>Add New Role Profile</h6>
+    </div>
+    <div class="col">
+        <a onClick="window.location.reload();"><i class="fa fa-refresh" style="padding-top:20px; font-size:20px; color:blue; float:right;"></i></a>
+    </div>
+</div>
+
+<hr>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <a href="{% url 'addrole' %}" target="popup" onclick="window.open('{% url 'addrole' %}', 'popup', 'width=600, height=600');"><i class="fa fa-plus" style="color:green;"></i></a>
+
+    <p><button class="btn btn-primary" type="submit">Register Role Profile</button>
+    <button class="btn btn-danger" type="reset">Clear</button></p>
+  </form>
+</div>
+</div>
+
+{% endblock%}
+
+{% block script %}
+
+<script>
+    
+    function popupClosed() {
+        window.location.reload();
+    }
+
+</script>
+
+{% endblock%}

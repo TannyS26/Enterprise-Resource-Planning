@@ -1,0 +1,217 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+   <title>ERP Solutions</title>
+{% endblock%}
+
+{% block style %}
+    
+    <style>
+    body {
+        background: #17242D;
+    }
+    .card {
+        background: #4f5e65;
+        color: white;
+    }
+
+    hr {
+        background:white;
+    }
+
+    p {
+        color:white;
+        margin:10px;
+    }
+
+    .list-group-item {
+        background:none;
+        color:white;
+    }
+
+    .btn-primary {
+        background: #31C3A2;
+        border-color: #31C3A2;
+    }
+
+    h4,h6 {
+        margin-top:20px;
+        color:white;
+    }
+
+    a {
+        text-decoration:none;
+        color:white;
+    }
+    a:hover
+    {
+        color:#31C3A2;
+        text-decoration:none;
+        cursor:pointer;
+    }
+    </style>
+
+{% endblock %}
+
+{% block body %}
+
+<div class="container">
+
+<h4>Inventory</h4>
+
+<hr>
+
+<div class="row row-cols-1 row-cols-md-3" style="margin-top:10px;">
+  <div class="col mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">Stock Transactions</h5>
+        <hr>
+        <p class="card-text"></p>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="#">Stock Entry</a></li>
+            <li class="list-group-item"><a href="#">Delivery Note</a></li>
+            <li class="list-group-item"><a href="#">Purchase Receipt</a></li>
+            <li class="list-group-item"><a href="#">Material Request</a></li>
+            <li class="list-group-item"><a href="#">Pick List</a></li>
+            <!--<li class="list-group-item"><a href="#">Delivery Trip</a></li>-->
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">Stock Reports</h5>
+        <hr>
+        <p class="card-text"></p>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="#">Stock Ledger</a></li>
+            <li class="list-group-item"><a href="#">Stock Balance</a></li>
+            <li class="list-group-item"><a href="#">Stock Projected Quantity</a></li>
+            <!--<li class="list-group-item"><a href="#">Stock Summary</a></li>
+            <li class="list-group-item"><a href="#">Stock Ageing</a></li>
+            <li class="list-group-item"><a href="#">Item Price Stock</a></li>-->
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">Settings</h5>
+        <hr>
+        <p class="card-text"></p>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="#">Stock Settings</a></li>
+            <li class="list-group-item"><a href="#">Warehouse</a></li>
+            <li class="list-group-item"><a href="#">Unit of Measure (UOM)</a></li>
+            <li class="list-group-item"><a href="#">Brand</a></li>
+            <!--<li class="list-group-item"><a href="#">Item Attribute</a></li>
+            <li class="list-group-item"><a href="#">Item Variant Settings</a></li>-->
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">Items and Pricing</h5>
+        <hr>
+        <p class="card-text"></p>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="#">Item</a></li>
+            <li class="list-group-item"><a href="#">Product Bundle</a></li>
+            <li class="list-group-item"><a href="#">Item Group</a></li>
+            <!--<li class="list-group-item"><a href="#">Price List</a></li>
+            <li class="list-group-item"><a href="#">Item Price</a></li>
+            <li class="list-group-item"><a href="#">Shipping Rule</a></li>
+            <li class="list-group-item"><a href="#">Pricing Rule</a></li>
+            <li class="list-group-item"><a href="#">Item Alternative</a></li>
+            <li class="list-group-item"><a href="#">Item Manufacturer</a></li>
+            <li class="list-group-item"><a href="#">Item Variant Settings</a></li>-->
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">Serial No and Batch</h5>
+        <hr>
+        <p class="card-text"></p>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="#">Serial No</a></li>
+            <li class="list-group-item"><a href="#">Batch</a></li>
+            <!--<li class="list-group-item"><a href="#">Installation Note</a></li>
+            <li class="list-group-item"><a href="#">Serial No Service Contract Expiry</a></li>
+            <li class="list-group-item"><a href="#">Serial No Status</a></li>
+            <li class="list-group-item"><a href="#">Serial No Warranty Expiry</a></li>-->
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">Tools</h5>
+        <hr>
+        <p class="card-text"></p>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="#">Stock Reconciliation</a></li>
+            <li class="list-group-item"><a href="#">Landed Cost Voucher</a></li>
+            <li class="list-group-item"><a href="#">Packing Slip</a></li>
+            <!--<li class="list-group-item"><a href="#">Quality Inspection</a></li>
+            <li class="list-group-item"><a href="#">Quality Inspection Template</a></li>
+            <li class="list-group-item"><a href="#">Quick Stock Balance</a></li>-->
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">Key Reports</h5>
+        <hr>
+        <p class="card-text"></p>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="#">Item-Wise Price List Rate</a></li>
+            <li class="list-group-item"><a href="#">Stock Analytics</a></li>
+            <!--<li class="list-group-item"><a href="#">Delivery Note Trends</a></li>
+            <li class="list-group-item"><a href="#">Purchase Receipt Trends</a></li>
+            <li class="list-group-item"><a href="#">Ordered Items To Be Delivered</a></li>
+            <li class="list-group-item"><a href="#">Purchase Order Items To Be Received</a></li>
+            <li class="list-group-item"><a href="#">Item Shortage Report</a></li>
+            <li class="list-group-item"><a href="#">Batch-Wise Balance History</a></li>-->
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">Key Reports</h5>
+        <hr>
+        <p class="card-text"></p>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item"><a href="#">Item Prices</a></li>
+            <!--<li class="list-group-item"><a href="#">Batch Item Expiry Status</a></li>
+            <li class="list-group-item"><a href="#">Requested Items To Be Transferred</a></li>
+            <li class="list-group-item"><a href="#">Item-Wise Recommended Reorder Level</a></li>
+            <li class="list-group-item"><a href="#">Item Variant Details</a></li>
+            <li class="list-group-item"><a href="#">Subcontracted Raw Materials To Be Transferred</a></li>
+            <li class="list-group-item"><a href="#">Subcontracted Item To Be Received</a></li>
+            <li class="list-group-item"><a href="#">Stock and Account Value Comparison</a></li>-->
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+{% endblock %}
+
+{% block script %}
+
+{% endblock %}
